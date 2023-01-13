@@ -1,0 +1,746 @@
+body{
+    margin: 0px;
+    font-family: 'poppins',sans-serif;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+nav{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    font-family:'Poppins', sans-serif;
+    height: 77px;
+    padding: 0px 28px 0px 28px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+.demo-pages{
+    position: relative;
+    z-index: 999;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    border: 0px solid gray;
+    background-color: rgb(241, 241, 241);
+    border-radius:4px ;
+    padding :4px 8px;
+    box-shadow:0px 0px 70px 1px rgb(64, 60, 60);
+}
+
+.drop-down hr{
+    margin: 0;
+    width: 75px;
+    margin: auto;
+}
+.drop-down section:hover{
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.drop-pages:hover .drop-down{
+    display: none;
+}
+nav.right{
+    display: flex;
+    align-items: center;
+}
+nav button{
+    margin: 0px;
+    margin-right: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.7px;
+    font-weight:550;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image:url(landing-background.png); 
+    background-position: left;
+    background-size:cover;
+}
+.logo{
+    height: 40px;
+    margin: 0px;
+}
+#buy{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color:rgb(170, 210, 54);
+    padding: 6px 34px;
+    border-radius: 4px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+}
+.main #headerh1 h1{
+    font-family: 'poppins',sans-serif;
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 550;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 40px;
+
+}
+#headerp p{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 400;
+    color:#8b8b99 ;
+    padding: 0.2%;
+    margin: auto;
+}
+.main-flex{
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 14px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    
+}
+.main-flex i{
+    position: relative;
+    z-index: 0;
+    font-size: 100px;
+    transition: all 0.3s;
+}
+.main-flex i:hover{
+    transform: scale(1.2);
+}
+
+#step1{
+    width: 25vw;
+    background-color:  #5acda6;
+    box-sizing: border-box;
+}
+#step2{
+    width: 25vw;
+    background-color:  #91ac41;
+}
+#step3{
+    width: 25vw;
+    background-color:  #e4b476;
+}
+
+#step4{
+    width: 25vw;
+    background-color: #f69dad;;
+
+}
+.main-flex-content{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding:112px 48px;
+}
+.fresh-food{
+    background-color:#f7eee2;
+    width: 100%;
+    padding: 75px 0px;
+    text-align: center;
+}
+.fresh-food p{
+    color:#91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    margin-top: 35px;
+    text-align: center;
+
+}
+.fresh-food h2{
+    font-size: 44px;
+    margin: 0px;
+}
+.fresh-food-descrp p{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+.store-flex{
+    width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    flex: 1 240px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+.box-content-store{
+    width: 285px;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    text-align: center;
+    
+}
+.store-icon-wrapper{
+    margin: auto;
+    padding-top:35px ;
+    width: 140px;
+    height: 100px;
+    border-radius: 70px;
+    background-color:#e3b375 ;
+    text-align: center;
+    transition: all 0.3s;
+}
+.store-icon-wrapper:hover{
+    transform: scale(1.05);
+}
+.box-content-store i{
+    font-size: 60px ;
+    color: white;
+}
+.box-content-store p{
+    font-family:'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;  
+}
+.store-content p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+.vegan-shop{
+    text-align: center;
+    padding: 75px 2px;
+}
+.vegan-shop p{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    margin-top: 35px;
+}
+.vegan-shop h1{
+    margin: 0px;
+    font-size: 44px;
+    font-weight: 600px;
+}
+.vegan-shop-descrp p{
+
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+.vegan-shop-flex{
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.vegan-img{
+    height:80px;
+    border-radius: 40px;
+}
+.vegan-content p{
+    /* width: 250px; */
+    font-family:'Poppins', sans-serif; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color:#8b8b99 ;
+}
+.vegan-author p{
+    font-family:'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 600px;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+.vegan-content-occup p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:  #8b8b99;
+    font-style: Italic;
+    margin: 0px;
+}
+.vegan-shop-flex1{
+    width: 290px;
+    background-color:#f5f6fb;
+    padding: 50px 20px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    margin-right:30px ;
+}
+.vegan-shop-flex2{
+    width: 290px;
+    background-color:#f5f6fb;
+    padding: 50px 20px 20px 20px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    height:70%;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.vegan-shop-flex3{
+    margin-left:30px ;
+    width: 290px;
+    background-color:#f5f6fb;
+    padding: 50px 20px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+.follow-us-box{
+    display: flex;
+}
+
+.stbr-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.stbr-container{
+    width: auto;
+    height: auto;
+}
+.stbr-container img{
+    width: 100%;
+    height:auto
+}
+
+.follow-us{
+    display: flex;
+    /* width: 100%; */
+    background-image: url(strawberry-white.png);
+    background-position: left;
+    background-size: cover;
+}
+.follow-us-textwrap{
+    display: flex;
+    flex-direction: column;
+    margin: 115px;
+    max-width: 20vw;
+}
+.follow-us-textwrap h1{
+    font-size: 44px;
+}
+.follow-us-textwrap p{
+    font-family:'Poppins', sans-serif; 
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color:#8b8b99 ;
+}
+
+.follow-us input.email{
+    margin-top:40px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color:rgba(255, 255, 255, 1) ;
+    font-family:'Poppins', sans-serif;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+}
+.follow-us input.submit{
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgba(231, 231, 231, 0);
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-family:'Poppins', sans-serif;
+    background-color: #f69dad;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    
+}
+.follow-us input.submit:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border:1px solid #f69dad;
+    color: #f69dad;
+}
+.satisfied-mem{
+    background-color: #f6fcfa;
+}
+.mem-content{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    padding: 100px 0px;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    background-color: #f6fcfa;
+    margin: 0px auto;
+}
+.mem-content h1{
+    font-size: 44px;
+    margin: 0%;
+
+}
+.mem-content p{
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+.mem-content section{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    justify-items: center;
+    padding: 0px 64px; 
+}
+.vimeo-video{
+    text-align: center;
+}
+.vimeo-video h1{
+    color: #8b8b99;
+    font-family:'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 350;
+}
+.vimeo-video hr{
+    margin: 20px auto;
+    width: 100px;
+    border:0.2px solid #e4b476;
+    border-bottom: none;
+    border-radius: 2px;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 25.25%;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.contact-info{
+    display: flex;
+    margin: 60px auto;
+    /* padding: 20px; */
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    text-align: left;
+}
+.contact-info h1{
+    margin: 0;
+
+    color: black;
+}
+.contact-info p{
+    font-weight: 380;
+    color: #8b8b99;
+}
+.left-contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 20px;
+}
+.right-contact-info{
+    display:flex;
+    flex-direction: column;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.left-contact-info h1{
+    font-size: 24px;
+    letter-spacing: 0.5;
+    font-weight: 550;
+}
+.Adress-info p{
+    max-width: 500px;
+}
+.Adress-info h1{
+    font-weight: 900;
+    font-size: 44px;
+}
+.right-contact-info h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+}
+.right-contact-info p{
+    max-width: 500px;
+}
+.right-contact-info input{
+    outline: none;
+    padding: 15px;
+    width: 85%;
+    max-width: 450px;
+    margin: 7px;
+}
+.right-contact-info textarea{
+    padding-left: 10px;
+    width: 85%;
+    margin-left: 7px;
+}
+.right-contact-info .submit{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color:rgb(170, 210, 54);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 15px;
+}
+.right-contact-info input::placeholder{
+    font-family: 'poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8b8b99;
+}
+.right-contact-info textarea{
+    font-family: 'poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #8b8b99;
+    outline: none;
+    height: 60px;
+}
+.footer{
+    text-align: center;
+    background-color :#232323; 
+    color: white;
+    margin: 0;
+    padding: 30px;
+}
+@media screen and (max-width:900px){
+    nav{
+        padding: 0px 10px;
+        width: 100%;
+        
+    }
+    header{
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height:100vh ;
+
+    }
+    #headerp p{
+        width: 90%;
+    }
+    .menu-items{ display: none;}
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-flex-content{
+        width: 100%;
+        padding: 50px 0px;
+    }
+    .main-flex-content p{
+        width: 80%;
+        margin: auto;
+    }
+    #step1{
+        margin: auto;
+        width: 100%;
+        /* padding: 10px 100px; */
+        padding-left: 0px;
+        text-align: center;
+    }
+    #step2{
+        margin: auto;
+        width: 100%;
+        /* padding: 10px 100px; */
+        padding-left: 0px;
+        text-align: center;
+    }
+    #step3{
+        margin: auto;
+        width: 100%;
+        /* padding: 10px 100px; */
+        padding-left: 0px;
+        text-align: center;
+    }
+    #step4{
+        margin: auto;
+        width: 100%;
+        /* padding: 10px 100px; */
+        padding-left: 0px;
+        text-align: center;
+    }
+    .fresh-food{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .store-content p{
+        margin: 0;
+    }
+    .box-content-store p{
+        margin-top: 20px;
+    }
+    .store-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-content-store{
+        margin-top: 30px;
+        width: 85%;
+        padding: 10px 10px;
+        margin: auto;
+        
+    }
+    .store-icon-wrapper{
+        margin-top:30px ;
+    }
+    .vegan-shop h1{
+        font-size: 25px;
+    }
+    .vegan-shop-flex{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        box-sizing: border-box;
+    }
+    .vegan-shop-flex1{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 20px 0px;
+    }
+    .vegan-shop-flex2{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 20px 0px;
+    }
+    .vegan-shop-flex3{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 20px 0px;
+    }
+    .stbr-img{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 0px;
+    }
+    .stbr-img img{
+        width: 100%;
+    }
+    .follow-us-box{
+        margin: 0;
+    }
+    .follow-us{
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px;
+        background-position: right;
+        background-size: cover;
+    }
+    .follow-us input.email{
+        width:50%;
+    }
+    .follow-us input.submit{
+        width: 50%;
+    }
+    .follow-us-textwrap {
+        margin: 10px;
+        padding: 0px 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .mem-content{
+        flex-direction: column;
+    }
+    .mem-content section{
+        margin: 15px 0px;
+        padding: 0px 200px;
+    }
+    .container{
+        padding-top: 70%;
+        height: 100%;
+    }
+    .vimeo-video hr{
+        margin: 10px auto;
+    }
+    .contact-info{
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 10px;
+        max-width: 80%;
+    }
+    .left-contact-info{
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+    }
+    .right-contact-info{
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+    }
+    .right-contact-info input{
+        width: 70%;
+        margin: 10px auto;
+    }
+    .right-contact-info textarea{
+        width: 70%;
+        margin: 0px;
+    }
+}
