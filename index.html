@@ -13,6 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="loading-screen">
+  <div class="loader"></div>
+</div>
+
+<!-- The rest of your page content goes here -->
+
+    <script>
+        window.addEventListener("load", function () {
+  const loader = document.querySelector(".loading-screen");
+  loader.style.opacity = 0;
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 500);
+});
+    </script>
     <nav>
         <img class="logo" src="logo1.jpg" alt="Logo">
         <div class="right">
